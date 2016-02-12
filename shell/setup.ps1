@@ -15,5 +15,4 @@ cp C:\shares\.m2\settings*.xml C:\Users\IEUser\.m2\
 cp C:\shares\.ssh\* C:\Users\IEUser\.ssh\
 
 Add-Content $profile '. C:\vagrant\profile\mvn_alias.ps1'
-
 Add-Content $profile '. C:\vagrant\profile\git_alias.ps1'
