@@ -53,3 +53,26 @@ Git
   gb: git branch
   gd: git diff
 ```
+
+## Troubleshooting
+
+If the aliases are not working check the powershell profile
+
+`type $profile`
+
+There should be two lines containing the following:
+```
+. C:\vagrant\profile\mvn_alias.ps1
+. C:\vagrant\profile\git_alias.ps1
+```
+
+If those lines are missing add them:
+```
+Add-Content $profile '. C:\vagrant\profile\mvn_alias.ps1'
+Add-Content $profile '. C:\vagrant\profile\git_alias.ps1'
+```
+
+then reload the profile:
+```
+. $profile
+```
