@@ -27,8 +27,8 @@ RDP into the system
 memory = 4Gb
 cpu = 2
 
-User = IEUser
-Password = Passw0rd!
+User = vagrant
+Password = vagrant
 
 Shared Folders
 
