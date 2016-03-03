@@ -1,4 +1,4 @@
-# Vagrant Windows Development Environment
+# Vagrant Windows Development Environment [![Stories in Ready](https://badge.waffle.io/oconnormi/vagrant-windows.png?label=ready&title=Ready)](http://waffle.io/oconnormi/vagrant-windows)
 
 This Vagrantfile creates a windows vm for use in java Development
 
