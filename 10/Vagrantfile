@@ -6,16 +6,20 @@
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
 Vagrant.configure(2) do |config|
-  config.vm.box = "opentable/win-2012r2-standard-amd64-nocm"
+  config.vm.box = "inclusivedesign/windows10-eval-x64"
   config.vm.guest = :windows
   config.vm.communicator = "winrm"
-  config.vm.hostname = "win2012"
+  config.vm.hostname = "win10"
   config.vm.network "public_network"
-  config.vm.network "forwarded_port", guest: 3389, host: 3389
+  config.vm.network :forwarded_port, host: 33389, guest: 3389
   config.vm.provider :virtualbox do |v|
     v.gui = false
     v.memory = 4096
     v.cpus = 2
+  end
+  config.vm.provider "hyperv" do |h|
+    h.cpus = 2
+    h.memory = 4096
   end
   config.vm.synced_folder "~/.ssh", "/shares/.ssh"
   config.vm.synced_folder "~/.m2", "/shares/.m2"

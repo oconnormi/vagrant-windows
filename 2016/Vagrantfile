@@ -9,9 +9,10 @@ Vagrant.configure(2) do |config|
   config.vm.box = "mwrock/Windows2016"
   config.vm.guest = :windows
   config.vm.communicator = "winrm"
-  config.vm.hostname = "win2012"
+  config.vm.hostname = "win2016"
   config.vm.network "public_network"
   config.vm.provider :virtualbox do |v|
+    v.gui = false
     v.memory = 4096
     v.cpus = 2
   end
