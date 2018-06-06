@@ -3,6 +3,7 @@ choco install jdk8 --force
 choco install maven
 choco install git
 choco install intellijidea-community
+choco install 7zip
 
 if (!(Test-Path /Users/vagrant/.m2)) {
  mkdir C:\Users\vagrant\.m2
