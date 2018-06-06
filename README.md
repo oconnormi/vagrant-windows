@@ -21,6 +21,7 @@ RDP into the system
 * git
 * posh-git
 * intellij community edition
+* 7zip
 
 ## Specs
 ```
